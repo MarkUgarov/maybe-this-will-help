@@ -32,5 +32,5 @@ You can pull this example with
 [Run an image as container](../step2/runDockerContainer.md)
 
 # Step 3: Configure your database
-[Configure your oracle database]
+[Configure your oracle database](configureOracleDbInContainer.md)
 

@@ -44,7 +44,7 @@ $ sqlplus
 
 It will require credentials.
 Username is "SYS as SYSDBA"
-Password should be "password" (unless you changed it in the `docker-compose.yml` and Step 1).
+Password should be "password" (unless you changed it in the [docker-compose.yml](../step2/runDockerContainer.md#prepare-docker-file) and Step 1).
 
 If the credentials do not work, go back to "Change password" and change the password.
 You can check if the database is working by executing
@@ -53,6 +53,7 @@ SQL> SELECT * FROM TAB;
 
 Then execute the follwing (only the commands which are makred "SQL>" have to be executed, the lines in between should be the response if everything was executed correctly).
 
+```
 SQL> create user brad identified by brad;
 User created.
 SQL> grant unlimited tablespace to brad;
@@ -70,28 +71,25 @@ Grant succeeded.
 SQL> grant create sequence to brad;
 Grant succeeded.
 exit;
+```
 
 Done.
 
-## Hint 1: If it shows that the user is already existing, you probably imported an image that is already set up.
+### Hint 1: 
 
-## Hint 2: There are sometimes errors that can be googeled. E.g. you have to run
+If it shows that the user is already existing, you probably imported an image that is already set up.
+
+### Hint 2: 
+
+There are sometimes errors that can be googeled. E.g. you have to run
 
 SQL> alter session set "_ORACLE_SCRIPT"=true;
 
 if "ORA-65096: invalid common user or role name" is shown.
 
-# Connect with IntelliJ (optional)
+# Next 
 
-Open the project of your choice (e.g clx-fbk-r5-web-portal) and Open the "Database" Tool-Window (which is normally shown on the far right on the screen, else go to "View" > "Tool Windows" and click "Database").
-Inside (on the top) there is a small button for the "Data Source Properties". Click so the Properties open and add a new Oracle Data Source (via the small "+").
+You probably want to connect your Database with some application that visualises it. 
 
-1. In the URL paste "jdbc:oracle:thin:@localhost:1521:ORCLCDB". Some of the fields should now fill automatically.
-2. Choose "Connection Type": SID
-3. Choose "Driver": Oracle
-4. Set "Authentication": "User & Password". Type in "brad" and "password" (or whatever user and password you set before).
-
-Hint: if this does not work, try with User "SYS as SYSDBA". 
-
-Click "Test Connection"
+You could for example [connect with IntelliJ](connectWithIntelliJ.md)
 
