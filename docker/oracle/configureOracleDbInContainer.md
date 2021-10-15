@@ -83,9 +83,9 @@ If it shows that the user is already existing, you probably imported an image th
 
 There are sometimes errors that can be googeled. E.g. you have to run
 
-SQL> alter session set "_ORACLE_SCRIPT"=true;
+> SQL> alter session set "_ORACLE_SCRIPT"=true;
 
-if "ORA-65096: invalid common user or role name" is shown.
+if `ORA-65096: invalid common user or role name` is shown.
 
 # Next 
 
