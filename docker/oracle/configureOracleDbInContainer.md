@@ -47,7 +47,7 @@ Then execute
 
 It will require credentials.
 Username is "SYS as SYSDBA"
-Password should be "password" (unless you changed it in the [docker-compose.yml](../step2/runDockerContainer.md#prepare-docker-file) and Step 1).
+Password should be "password" (unless you changed it in the [docker-compose.yml](../common/step2/runDockerContainer.md#prepare-docker-file) and Step 1).
 
 If the credentials do not work, go back to "Change password" and change the password.
 You can check if the database is working by executing

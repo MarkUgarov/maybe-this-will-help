@@ -23,13 +23,13 @@ You can pull this example with
 > docker pull quay.io/maksymbilenko/oracle-12c
 
 ## Option 2:
-[Use a provided Docker Image from archive](../step1/importDockerImage.md)
+[Use a provided Docker Image from archive](../common/step1/importDockerImage.md)
 
 ## Option 3:
-[Create a new Docker image from scratch](../step1/createOracleDockerImage.md)
+[Create a new Docker image from scratch](../common/step1/createOracleDockerImage.md)
 
 # Step 2: Run the Docker Container
-[Run an image as container](../step2/runDockerContainer.md)
+[Run an image as container](../common/step2/runDockerContainer.md)
 
 # Step 3: Configure your database
 [Configure your oracle database](configureOracleDbInContainer.md)

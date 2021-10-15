@@ -62,7 +62,7 @@ Now replace
 4. <MY_VOLUME_FOLDER> with the volume folder
 5. optional: the `oracle19c` with any name you like (because you actually work with a newer version or whatever)
 
-Hint: You can also change the password to something else, but you have to consider it later when we [configure the database](../oracle/configureOracleDbInContainer.md).
+Hint: You can also change the password to something else, but you have to consider it later when we [configure the database](../../oracle/configureOracleDbInContainer.md).
 
 ## Step 3: Run the container
 
@@ -92,4 +92,4 @@ Mine is
 
 # Next steps
 
-You might want to [configure the database](../oracle/configureOracleDbInContainer.md).
+You might want to [configure the database](../../oracle/configureOracleDbInContainer.md).
