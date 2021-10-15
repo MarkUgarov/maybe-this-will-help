@@ -56,11 +56,11 @@ Run the following line to see the details of your imported image.
 
 > docker images
 
-Now replace
-2. the <CONTAINER_NAME> with the name of the imported container
-3. the <TAG> with the tag of the imported container (but leave the ":" between name and tag)
-4. <MY_VOLUME_FOLDER> with the volume folder
-5. optional: the `oracle19c` with any name you like (because you actually work with a newer version or whatever)
+Now replace inside the yaml:
+1. the <CONTAINER_NAME> with the name of the imported container
+2. the <TAG> with the tag of the imported container (but leave the ":" between name and tag)
+3. <MY_VOLUME_FOLDER> with the volume folder
+4. optional: the `oracle19c` with any name you like (because you actually work with a newer version or whatever)
 
 Hint: You can also change the password to something else, but you have to consider it later when we [configure the database](../../oracle/configureOracleDbInContainer.md).
 
