@@ -26,7 +26,7 @@ Also create a directory which you want to mount for your database. It is actuall
 
 You can use docker run command or docker-compose. I will demonstrate with docker-compose, because I think it's much more readable, but you can also choose to evaluate the docker run command.
 
-First create a file "docker-compose.yml" anywhere in your filesystem, I suggest to keep it somewhere near your project-directory (e.g in the parent folder, mine is named "FinHyb"). You can open it with any editor, but IntelliJ might be helpful.
+First create a file "docker-compose.yml" anywhere in your filesystem, I suggest to keep it somewhere near your project-directory (e.g in the parent folder). You can open it with any editor, but IntelliJ might be helpful.
 
 Paste the follwing in it:
 
@@ -62,6 +62,8 @@ Now replace
 4. <MY_VOLUME_FOLDER> with the volume folder
 5. optional: the `oracle19c` with any name you like (because you actually work with a newer version or whatever)
 
+Hint: You can also change the password to something else, but you have to consider it later when we [configure the database](../oracle/configureOracleDbInContainer.md).
+
 ## Step 3: Run the container
 
 Open your terminal (e.g. Command Prompt or IntelliJ-Terminal) and navigate to the folder that contains the `docker-compose.yml`. Execute
@@ -87,3 +89,7 @@ to see the log. If there is no output, your container does not run.
 Mine is 
 
 > docker logs -f --tail 100 oracle19c
+
+# Next steps
+
+You might want to [configure the database](../oracle/configureOracleDbInContainer.md).

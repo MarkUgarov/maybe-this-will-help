@@ -31,5 +31,6 @@ You can pull this example with
 # Step 2: Run the Docker Container
 [Run an image as container](../step2/runDockerContainer.md)
 
-# Bonus: Committing an Exporting
+# Step 3: Configure your database
+[Configure your oracle database]
 
