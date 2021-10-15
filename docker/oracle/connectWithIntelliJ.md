@@ -11,3 +11,9 @@ Inside (on the top) there is a small button for the "Data Source Properties". Cl
 Hint: if this does not work, try with User "SYS as SYSDBA". The password should also be "password". 
 
 Click "Test Connection"
+
+---
+
+# Done?
+Maybe you want to check [all steps of running an oracle database via docker-compose](../../oracle/oracle.md)
+or you would like to [export your container](../common/step3/exportDocker.md#option-1-export-your-container-directly)
