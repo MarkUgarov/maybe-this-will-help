@@ -5,17 +5,18 @@ See e.g. [https://github.com/MaksymBilenko/docker-oracle-12c](https://github.com
 
 > docker pull quay.io/maksymbilenko/oracle-12c
 
-## Download / Copy / ...
+## Step 1: Download / Copy / ...
 
-There are many ways to get an archive. In most cases it will be be a `.tar`, like `oracle19c.tar`
+There are many ways to get an archive. In most cases it will be be a `.tar`, like `oracle19c.tar`. 
+Mabe a friend gave it to you on a LaserDisk after he [exported his docker container](../exportDocker.md)
 
-Download it anywhere. 
+Download / copy /... it anywhere. 
 
-## Import
+## Step 2: Import
 
 Navigate to the folder where you downloaded the file via console (e.g. Command Prompt or IntelliJ-Terminal) you  execute the following
 
-> docker load --input \[your archive name\]
+> docker load --input `<your archive name>`
 
 e.g.
 > docker load --input oracle19c.tar
@@ -23,4 +24,4 @@ e.g.
 This may take a while!
 
 # Next steps
-You might like to 
+You might like to [run your docker image](../step2/runDockerContainer.md)

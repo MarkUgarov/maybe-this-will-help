@@ -6,7 +6,7 @@ The following page was composed by some basic knowledge about docker and reading
 - [https://github.com/steveswinsburg/oracle19c-docker](https://github.com/steveswinsburg/oracle19c-docker)
 - [https://www.martinberger.com/2020/09/windows-10-wsl-2-docker-and-oracle-a-perfect-partnership/](https://www.martinberger.com/2020/09/windows-10-wsl-2-docker-and-oracle-a-perfect-partnership/)
 
-## Download from oracle.com
+## Step 1: Download from oracle.com
 
 Download the LINUX Database from from `http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html`.
 
@@ -14,7 +14,7 @@ Download the LINUX Database from from `http://www.oracle.com/technetwork/databas
 
 E.g. Download the Oracle Database 19c binary `LINUX.X64_193000_db_home.zip`.
 
-## Clone from github.com/oracle
+## Step 2: Clone from github.com/oracle
 
 1. Clone `https://github.com/oracle/docker-images`.
 2. Put the zip of the database you just downloaded (e.g. `LINUX.X64_193000_db_home.zip`) in the `SingleInstance/dockerfiles-Directory` of the matching version (e.g. in `OracleDatabase/SingleInstance/dockerfiles/19.3.0`). **Do not unzip it.**
@@ -24,7 +24,7 @@ E.g. Download the Oracle Database 19c binary `LINUX.X64_193000_db_home.zip`.
 * Point 3 is optional in most cases, but obligatory if `https://github.com/oracle/docker-images/pull/1576` is not yet merged
 
 
-## Enable Windows Subsystem 2 for Linux (obligatory for Windows)
+## Step 2.8214: Enable Windows Subsystem 2 for Linux (obligatory for Windows)
 
 We do need to enable Windows Subsystem 2 for Linux. Open a power shell as admin user. Run
 
@@ -32,7 +32,7 @@ We do need to enable Windows Subsystem 2 for Linux. Open a power shell as admin 
 
 That's it. Well done.
 
-## Build the image
+## Step 3: Build the image
 
 To make the rest of the page more readable, I will continue with the Oracle 19c example. If you have any other version, please adapt the commands.
 
@@ -48,3 +48,5 @@ You might want to check if the image exist by calling
 
 > docker images
 
+# Next steps
+You might like to [run your docker image](../step2/runDockerContainer.md)

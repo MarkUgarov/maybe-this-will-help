@@ -1,6 +1,6 @@
-# Run a Docker Container
+# Run a Docker Container with Oracle DB
 
-## Check your images and Re-Tag (optional)
+## Step 0: Check your images and Re-Tag (optional)
 
 In your terminal (e.g. Command Prompt or IntelliJ-Terminal) execute
 
@@ -12,11 +12,11 @@ TODO: Picture
 
 If you don't see your image, go back to either [import the docker image](../step1/importDockerImage.md) or [create a new docker image](../step1/createOracleDockerImage.md)
 
-If you are happy with name and tag, go to the next step. Otherwise you can rename it with  the `docker tag` -command (https://docs.docker.com/engine/reference/commandline/tag/).
+If you are happy with name and tag, go to the next step. Otherwise you can rename it with  the `docker tag` -command (see [https://docs.docker.com/engine/reference/commandline/tag/](https://docs.docker.com/engine/reference/commandline/tag/)).
 
-> docker tag IMAGE_ID TARGET_IMAGE[:TAG]
+> docker tag `<IMAGE_ID TARGET_IMAGE:TAG>`
 
-## Prepare
+## Step 1: Prepare
 
 ### Prepare volume folder
 
@@ -52,59 +52,38 @@ volumes:
   db_data: { }
 ```
 
-
 Run the following line to see the details of your imported image.
 
 > docker images
 
 Now replace
-1. the <CONTAINER_NAME> with the name of the imported container
-2. the <TAG> with the tag of the imported container (but leave the ":" between name and tag)
-3. <MY_VOLUME_FOLDER> with the volume folder
+2. the <CONTAINER_NAME> with the name of the imported container
+3. the <TAG> with the tag of the imported container (but leave the ":" between name and tag)
+4. <MY_VOLUME_FOLDER> with the volume folder
+5. optional: the `oracle19c` with any name you like (because you actually work with a newer version or whatever)
 
-## Run the container
+## Step 3: Run the container
 
-Open your terminal (e.g. Command Prompt or IntelliJ-Terminal) and navigate to the folder that contains the "docker-compose.yml". Excute
+Open your terminal (e.g. Command Prompt or IntelliJ-Terminal) and navigate to the folder that contains the `docker-compose.yml`. Execute
 
 > docker-compose up
 
 It might take a while, but the image should be imported.
 
-## Check if everything works
+## Step 4: Check if everything works
 
 ### Check log
 
 Open Docker Desktop (in Windows: see in the far right of your taskbar, there should be the symbol somewhere, just left-click once).
 
-You should see something that resembles the folder name you located your docker-compose.yml in (mine is showing "finhyb"). You can click on the little arrow left to it. Something should "unfold" and show "oracle19c". Click on it to see the console.
+You should see something that resembles the folder name you located your docker-compose.yml in. You can click on the little arrow left to it. Something should "unfold" and show "oracle19c". Click on it to see the console.
 
-Hint: If you run into Problems, altneratively call
+Hint: If you run into Problems, alternatively call
 
-> docker logs -f --tail 100 oracle19c
+> docker logs -f --tail 100 `<your container name>`
 
 to see the log. If there is no output, your container does not run.
 
-### Change password
+Mine is 
 
-It might be necessary to change the password e.g. if there are shown in the log or you have issues with the following step "Setup FinHyb user". This should not happen, but my experience dissents.
-Call
-
-> docker exec -it oracle19c bash
-
-or use docker desktop to open the terminal (CLI) of your container (the Symbol looks like ">.")
-
-TODO: Picture
-
-If the container runs, something is shown like
-
-> \[oracle@1a9de9a580e1 ~\]$
-
-With a blinking cursor. Congratulations, you are now inside the container which is Linux. You can not copy-paste via Ctrl+C / Ctrl+V between this console and your Windows while remaining here.  Execute
-
-> ./setPassword.sh password
-
-Hint: You can also change the password to something else, but then you have to adapt the one in the docker-compose.yml.
-
-Stop the container and rerun with `docker-compose up`. See if the problems remain. If so, you're now on your own.
-
-(Just kidding. Google it and if you don't find anything, ask around, don't be shy to talk to your teammates.)
+> docker logs -f --tail 100 oracle19c

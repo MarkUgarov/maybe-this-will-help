@@ -1,7 +1,6 @@
 # Oracle Database with docker
 
-
-I work with Windows, so if you work with some other OS, sometimes some small adaptation might be needed, but the commands of docker and docker-compose will be absolutely the same. 
+I work with Windows, so if you work with some other OS, sometimes some small adaptation might be needed, but the commands of docker and docker-compose will be absolutely the same.
 
 # Step 0: Download and install Docker Desktop
 
@@ -13,7 +12,13 @@ You will need admin rights.
 
 ## Option 1:
 
-Pull a docker image from a repository. E.g. see [https://github.com/MaksymBilenko/docker-oracle-12c](https://github.com/MaksymBilenko/docker-oracle-12c)
+Pull a docker image from a repository.
+This needs no extra page, because it is short and there are plenty examples out there in the internet.
+
+E.g. see [https://github.com/MaksymBilenko/docker-oracle-12c](https://github.com/MaksymBilenko/docker-oracle-12c)
+You can pull this example with
+
+> docker pull quay.io/maksymbilenko/oracle-12c
 
 ## Option 2:
 [Use a provided Docker Image from archive](step1/importDockerImage.md)
@@ -21,8 +26,8 @@ Pull a docker image from a repository. E.g. see [https://github.com/MaksymBilenk
 ## Option 3:
 [Create a new Docker image from scratch](step1/createOracleDockerImage.md)
 
-
 # Step 2: Run the Docker Container
+[Run an image as container](step2/runDockerContainer.md)
 
 # Bonus: Committing an Exporting
 
