@@ -25,7 +25,7 @@ Maybe you want to upload that new archive somewhere so others can enjoy.
 
 Also see [https://docs.docker.com/engine/reference/commandline/commit/](https://docs.docker.com/engine/reference/commandline/commit/).
 
-Example: You created your docker image with name `oracle/database` and tag `19.3.0-ee` as described in [Create docker image from scratch](step1/createOracleDockerImage.md)
+Example: You created your docker image with name `oracle/database` and tag `19.3.0-ee` as described in [Create docker image from scratch](../step1/createOracleDockerImage.md)
 Execute
 
 > docker tag oracle/database:19.3.0-ee localhost:5000/ora19

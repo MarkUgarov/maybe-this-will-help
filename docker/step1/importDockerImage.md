@@ -8,7 +8,7 @@ See e.g. [https://github.com/MaksymBilenko/docker-oracle-12c](https://github.com
 ## Step 1: Download / Copy / ...
 
 There are many ways to get an archive. In most cases it will be be a `.tar`, like `oracle19c.tar`. 
-Mabe a friend gave it to you on a LaserDisk after he [exported his docker container](../exportDocker.md)
+Mabe a friend gave it to you on a LaserDisk after he [exported his docker container](../step3/exportDocker.md)
 
 Download / copy /... it anywhere. 
 

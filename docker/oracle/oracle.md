@@ -8,7 +8,7 @@ Go to docker.com, download and install.
 
 You will need admin rights.
 
-If you don't have any clue what docker is, maybe look [here](docker.md).
+If you don't have any clue what docker is, maybe look [here](../common/docker.md).
 
 # Step 1: Get the docker image
 
@@ -23,13 +23,13 @@ You can pull this example with
 > docker pull quay.io/maksymbilenko/oracle-12c
 
 ## Option 2:
-[Use a provided Docker Image from archive](step1/importDockerImage.md)
+[Use a provided Docker Image from archive](../step1/importDockerImage.md)
 
 ## Option 3:
-[Create a new Docker image from scratch](step1/createOracleDockerImage.md)
+[Create a new Docker image from scratch](../step1/createOracleDockerImage.md)
 
 # Step 2: Run the Docker Container
-[Run an image as container](step2/runDockerContainer.md)
+[Run an image as container](../step2/runDockerContainer.md)
 
 # Bonus: Committing an Exporting
 
