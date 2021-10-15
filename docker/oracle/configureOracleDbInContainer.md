@@ -5,6 +5,8 @@ Hint: This page was written using a `oracle19c` container. Your container might 
 To make it more visible whenever a command line has to be executed (or appears) inside a container, I write `$` as a prefix.
 To make it more visible whenever a command is executed in SQL Plus, I write `SQL>` as a prefix.
 
+---
+
 ## Step 1: Change password
 
 It might be necessary to change the password e.g. if there are shown in the log or you have issues with the following step. This should not happen, but my experience dissents.
@@ -29,6 +31,8 @@ Hint: You can also change the password to something else, but then you have to a
 Stop the container and rerun with `docker-compose up`. See if the problems remain. If so, you're now on your own.
 
 (Just kidding. Google it and if you don't find anything, ask around, don't be shy to talk to your teammates.)
+
+---
 
 # Step 2 (Optional): Setup a user
 
@@ -89,6 +93,8 @@ There are sometimes errors that can be googeled. E.g. you have to run
 > SQL> alter session set "_ORACLE_SCRIPT"=true;
 
 if `ORA-65096: invalid common user or role name` is shown.
+
+---
 
 # Next 
 

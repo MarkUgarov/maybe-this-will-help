@@ -2,7 +2,11 @@
 
 This page describes how to export a docker image or container to an archive. 
 
-## Option 1: Export your container directly
+In the end, somebody can [import that archive](../step1/importDockerImage.md#getting-a-docker-image-from-an-archive).
+
+---
+
+## Option 1: Export your container directly 
 
 See also [https://docs.docker.com/engine/reference/commandline/export/](https://docs.docker.com/engine/reference/commandline/export/).
 
@@ -15,9 +19,13 @@ For example if your container is named `oracle19c`, execute
 > docker export --output="oracle19c.tar" oracle19c
 
 This might take a while!
+(After importing this archive, there will still be an image available - not a running container!)
+
 That should be it. You're done.
 
 Maybe you want to upload that new archive somewhere so others can enjoy.
+
+---
 
 ## Option 2: Export an image
 
@@ -52,3 +60,8 @@ An image can be exported (or "saved" as a .tar archive). See [https://docs.docke
 (Of course you may alter the name of the output archive, e.g. to "oracle21.tar".)
 
 This might take a while!
+
+---
+
+# Done?
+Maybe you want to check [all steps of running an oracle database via docker-compose](../../oracle/oracle.md)

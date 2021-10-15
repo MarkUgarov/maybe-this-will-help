@@ -2,6 +2,8 @@
 
 I work with Windows, so if you work with some other OS, sometimes some small adaptation might be needed, but the commands of docker and docker-compose will be absolutely the same.
 
+---
+
 # Step 0: Download and install Docker Desktop
 
 Go to docker.com, download and install. 
@@ -9,6 +11,8 @@ Go to docker.com, download and install.
 You will need admin rights.
 
 If you don't have any clue what docker is, maybe look [here](../common/docker.md).
+
+---
 
 # Step 1: Get the docker image
 
@@ -28,8 +32,12 @@ You can pull this example with
 ## Option 3:
 [Create a new Docker image from scratch](../common/step1/createOracleDockerImage.md)
 
+---
+
 # Step 2: Run the Docker Container
 [Run an image as container](../common/step2/runDockerContainer.md)
+
+---
 
 # Step 3: Configure your database
 [Configure your oracle database](configureOracleDbInContainer.md)

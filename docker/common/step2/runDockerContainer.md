@@ -15,6 +15,9 @@ If you don't see your image, go back to either [import the docker image](../step
 If you are happy with name and tag, go to the next step. Otherwise you can rename it with  the `docker tag` -command (see [https://docs.docker.com/engine/reference/commandline/tag/](https://docs.docker.com/engine/reference/commandline/tag/)).
 
 > docker tag `<IMAGE_ID TARGET_IMAGE:TAG>`
+ 
+
+---
 
 ## Step 1: Prepare
 
@@ -64,7 +67,9 @@ Now replace inside the yaml:
 
 Hint: You can also change the password to something else, but you have to consider it later when we [configure the database](../../oracle/configureOracleDbInContainer.md).
 
-## Step 3: Run the container
+---
+
+## Step 2: Run the container
 
 Open your terminal (e.g. Command Prompt or IntelliJ-Terminal) and navigate to the folder that contains the `docker-compose.yml`. Execute
 
@@ -72,9 +77,9 @@ Open your terminal (e.g. Command Prompt or IntelliJ-Terminal) and navigate to th
 
 It might take a while, but the image should be imported.
 
-## Step 4: Check if everything works
+---
 
-### Check log
+## Step 3: Check if everything works
 
 Open Docker Desktop (in Windows: see in the far right of your taskbar, there should be the symbol somewhere, just left-click once).
 
@@ -89,6 +94,8 @@ to see the log. If there is no output, your container does not run.
 Mine is 
 
 > docker logs -f --tail 100 oracle19c
+
+---
 
 # Next steps
 

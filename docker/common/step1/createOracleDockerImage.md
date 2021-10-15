@@ -6,6 +6,8 @@ The following page was composed by some basic knowledge about docker and reading
 - [https://github.com/steveswinsburg/oracle19c-docker](https://github.com/steveswinsburg/oracle19c-docker)
 - [https://www.martinberger.com/2020/09/windows-10-wsl-2-docker-and-oracle-a-perfect-partnership/](https://www.martinberger.com/2020/09/windows-10-wsl-2-docker-and-oracle-a-perfect-partnership/)
 
+---
+
 ## Step 1: Download from oracle.com
 
 Download the LINUX Database from from `http://www.oracle.com/technetwork/database/enterprise-edition/downloads/index.html`.
@@ -23,6 +25,7 @@ E.g. Download the Oracle Database 19c binary `LINUX.X64_193000_db_home.zip`.
 
 * Point 3 is optional in most cases, but obligatory if `https://github.com/oracle/docker-images/pull/1576` is not yet merged
 
+---
 
 ## Step 2.8214: Enable Windows Subsystem 2 for Linux (obligatory for Windows)
 
@@ -31,6 +34,8 @@ We do need to enable Windows Subsystem 2 for Linux. Open a power shell as admin 
 > dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 
 That's it. Well done.
+
+---
 
 ## Step 3: Build the image
 
@@ -47,6 +52,8 @@ This will build the image, but not the container.
 You might want to check if the image exist by calling
 
 > docker images
+> 
+---
 
 # Next steps
 You might like to [run your docker image](../step2/runDockerContainer.md)
