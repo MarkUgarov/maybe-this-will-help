@@ -2,6 +2,9 @@
 
 Hint: This page was written using a `oracle19c` container. Your container might be named different. Adapt!
 
+To make it more visible whenever a command line has to be executed (or appears) inside a container, I write `$` as a prefix.
+To make it more visible whenever a command is executed in SQL Plus, I write `SQL>` as a prefix.
+
 ## Step 1: Change password
 
 It might be necessary to change the password e.g. if there are shown in the log or you have issues with the following step. This should not happen, but my experience dissents.
@@ -19,7 +22,7 @@ If the container runs, something is shown like
 
 With a blinking cursor. Congratulations, you are now inside the container which is Linux. You can not copy-paste via Ctrl+C / Ctrl+V between this console and your Windows while remaining here.  Execute
 
->./setPassword.sh password
+>$ ./setPassword.sh password
 
 Hint: You can also change the password to something else, but then you have to adapt the one in the `docker-compose.yml`.
 
@@ -40,7 +43,7 @@ First, open the console. As described above, call
 or use docker desktop to open the terminal (CLI) of your container (the Symbol looks like ">.")
 
 Then execute
-$ sqlplus
+>$ sqlplus
 
 It will require credentials.
 Username is "SYS as SYSDBA"
@@ -49,7 +52,7 @@ Password should be "password" (unless you changed it in the [docker-compose.yml]
 If the credentials do not work, go back to "Change password" and change the password.
 You can check if the database is working by executing
 
-SQL> SELECT * FROM TAB;
+> SQL> SELECT * FROM TAB;
 
 Then execute the follwing (only the commands which are makred "SQL>" have to be executed, the lines in between should be the response if everything was executed correctly).
 
