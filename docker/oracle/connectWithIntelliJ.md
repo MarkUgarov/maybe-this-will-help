@@ -10,7 +10,7 @@ Inside (on the top) there is a small button for the "Data Source Properties". Cl
 
 Hint: if this does not work, try with User "SYS as SYSDBA". The password should also be "password". 
 
-Click "Test Connection"
+Click "Test Connection". If successful, you might want to click "ok" and analyze your database.
 
 ---
 
