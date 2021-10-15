@@ -8,6 +8,8 @@ Go to docker.com, download and install.
 
 You will need admin rights.
 
+If you don't have any clue what docker is, maybe look [here](docker.md).
+
 # Step 1: Get the docker image
 
 ## Option 1:
