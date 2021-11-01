@@ -78,7 +78,7 @@ public class Service {
 
 ```
 
-## How to work with JMockit
+## How to work with Mockito
 
 You will have to do some setup first. For the maven pom (who does everything you need if you work with maven) see
 [the pom of this shitty project I wrote](https://github.com/MarkUgarov/TestProjectToTest/blob/master/pom.xml).
@@ -165,9 +165,9 @@ or even
 
 `Mockito.verifyZeroInteractions(service);`
  
-to have mor nuances in your verifications. 
+to have more nuances in your verifications. 
 
-Also you can improve your mocking in certain situations by doing something like 
+Also, you can improve your mocking in certain situations by doing something like 
 
 ```java
  doReturn(false, true)
