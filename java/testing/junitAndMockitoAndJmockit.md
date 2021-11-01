@@ -167,7 +167,8 @@ public class ControllerTest {
 with an anonymous class extending mockit.Expectations: 
 
 ``` 
-new Expectations()&#123 &#123
+{% raw %}
+new Expectations(){{
   singletonService.checkDataBaseAvailable();
   minTimes=1;
   result=false;
@@ -178,6 +179,7 @@ new Expectations()&#123 &#123
   SingletonService.sendAlertMail("Luke",expectedLocalDateTime);
   minTimes=1;
 }}
+{% endraw %}
 ```
 
 
