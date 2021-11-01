@@ -17,7 +17,7 @@ Also in some cases you haven't really the option to simply rewrite everything. S
 
 See [this page](jmockit.md) and maybe see [this project](https://github.com/MarkUgarov/TestProjectToTest) to compare.
 
-## How to work wiht Mockito
+## How to work with Mockito
 
 See [this page](mockito.md) and maybe see [this project](https://github.com/MarkUgarov/TestProjectToTest) to compare.
 
@@ -196,7 +196,7 @@ In most cases, you will only mock a `getInstance()` - method and in that case, t
 **Minus**
 
 New programmers, who don't know how to work with Mockito nor JMockit, will need a lot of explanation. 
-In addition, the code can be very cluttered and gets less readable the more static methods there are.
+In addition, the code can be very cluttered and gets less readable the more static methods there are - but this is clearly a problem with JMockit, not with the combination. 
 
 **Suggestion**
 
