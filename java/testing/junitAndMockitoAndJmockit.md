@@ -25,7 +25,7 @@ See [this page](mockito.md) and maybe see [this project](https://github.com/Mark
 
 The starting point is pretty exactly the one as in [How to work with JMockit](#how-to-work-with-jmockit).
 
-In this fiction, your team somehow endet up to program in singleton patern and likes static methods. There is nothing
+In this fiction, your team somehow endet up to program in singleton pattern and likes static methods. There is nothing
 you can do about. 
 
 However, in this szenario you decide to go with a combination of Mockito and JMockit. 

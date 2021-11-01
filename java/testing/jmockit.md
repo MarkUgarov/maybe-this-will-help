@@ -3,7 +3,7 @@
 JMockit is not my choice when it comes to mocking classes. However, it has its usages, e.g as described in [Combining JUnit, Mockito and JMockit](junitAndMockitoAndJmockit.md#why-should-i-do-that)
 
 
-In this fiction, your team somehow endet up to program in singleton patern and likes static methods. There is nothing
+In this fiction, your team somehow endet up to program in singleton pattern and likes static methods. There is nothing
 you can do about.
 
 ## Example classes
