@@ -24,4 +24,5 @@ _Note_: If you do this, you might end up to type in your password more often.
 1. Open a Command Prompt (or Power Shell) with admin rights.  E.g. go press the "Windows-Key" (or click the logo in the left lower corner), look for "Command Prompt" and click "Run as administrator". ![img.png](img.png) 
 2. A dialogue will appear. Use the credentials of your admin account.
 3. Open Lusrmgr by execution `lusrmgr.msc` in the upcomming terminal. 
-4. A window will open. Go to **Groups**, double click on "Administrators", click "Add..." and add your standard account (type your email-adress, click "Check Name", click "ok" and "ok" again to close the group). Do the same with group "Users". ![img_1.png](img_1.png)
+4. A window will open. Go to **Groups**, double click on "Administrators" ![img_1.png](img_1.png)
+5. Click "Add..." and add your standard account (type your email-adress, click "Check Name", click "ok" and "ok" again to close the group). Do the same with group "Users". (No picture here, you will figure it out.)
