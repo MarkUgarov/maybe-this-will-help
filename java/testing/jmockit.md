@@ -2,10 +2,11 @@
 
 JMockit is not my choice when it comes to mocking classes. However, it has its usages, e.g as described in [Combining JUnit, Mockito and JMockit](junitAndMockitoAndJmockit.md#why-should-i-do-that)
 
-## Example classes
 
 In this fiction, your team somehow endet up to program in singleton patern and likes static methods. There is nothing
 you can do about.
+
+## Example classes
 
 You wrote two little classes: a `Controller` and a `SingletonManager`. Assume we are in an early stage of the project and just want
 to make first steps by implementing the `Controller` without having the full functionality of the backend. In this
@@ -20,7 +21,7 @@ If so, everything is nice.
 
 If not, the `Controller` calls the `SingletonManager` again, evaluates current user and Time and sends an E-Mail.
 
-The Service is (obviously) just a prototype. But we can already test our Controller without implementing everything
+The `SingletonManager` is (obviously) just a prototype. But we can already test our Controller without implementing everything
 else.
 
 ```java

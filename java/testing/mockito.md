@@ -5,11 +5,10 @@ However, as mentioned [here](junitAndMockitoAndJmockit.md) there are some usages
 
 Nevertheless, the following page will focus on the usage of mockito.
 
+In this fiction, your team just started with a little project, you don't use fancy JavaEE-Features or Java Specification
+Request 330 (JSR330) yet, so you don't have to dive into that for our little example.
 
 ## Example classes
-
-In this fiction, your team just started with a little project, you don't use fancy JavaEE-Features or Java Specification 
-Request 330 (JSR330) yet, so you don't have to dive into that for our little example.
 
 You wrote two little classes: a `Controller` and a `Service`. Assume we are in an early stage of the project and just want
 to make first steps by implementing the `Controller` without having the full functionality of the backend. In this
@@ -24,7 +23,7 @@ If so, everything is nice.
 
 If not, the `Controller` calls the `Service` again, evaluates current user and Time and sends an E-Mail.
 
-The Service is (obviously) just a prototype. But we can already test our Controller without implementing everything
+The `Service` is (obviously) just a prototype. But we can already test our Controller without implementing everything
 else.
 
 ```java
