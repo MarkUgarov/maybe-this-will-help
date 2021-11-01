@@ -21,9 +21,9 @@ See [this page](jmockit.md) and maybe see [this project](https://github.com/Mark
 
 See [this page](mockito.md) and maybe see [this project](https://github.com/MarkUgarov/TestProjectToTest) to compare.
 
-## Example Scenario
+## Example Scenario 
 
-The starting point is pretty exactly the one as in [How to work with JMockit](#how-to-work-with-jmockit).
+The starting point is pretty exactly the one as above in [How to work with JMockit](#how-to-work-with-jmockit).
 
 In this fiction, your team somehow endet up to program in singleton pattern and likes static methods. There is nothing
 you can do about. 
@@ -116,6 +116,7 @@ In the test class, you use JMockit only as far as necessary (by mocking only the
 - to keep the anonymous class (the Expectations) as small as possible
 - to use Mockito whereever possible, so you can use its functionality and have as much boundary as possible between mocking and verification
 
+{% raw %}
 ```java
 package example.controller;
 
@@ -183,6 +184,7 @@ public class ControllerTestWithManagerAndJMockitAndMockito {
     }
 }
 ```
+{% endraw %}
 
 ### Conclusion of Mockito combined with JMockit
 
