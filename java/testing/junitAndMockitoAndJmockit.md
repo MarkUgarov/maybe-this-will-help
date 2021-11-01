@@ -166,7 +166,7 @@ public class ControllerTest {
 
 with an anonymous class extending mockit.Expectations: 
 
-```
+```text 
 new Expectations(){{
   singletonService.checkDataBaseAvailable();
   minTimes=1;
