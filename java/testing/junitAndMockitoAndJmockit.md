@@ -106,6 +106,7 @@ Hint:
 ***The following file may not be shown correctly. Please see the block bellow for the expectations. (This is a problem
 with git pages.)***
 
+{% raw %}
 ```java
 package example.controller;
 
@@ -163,6 +164,7 @@ public class ControllerTest {
     }
 }
 ```
+{% endraw %}
 
 with an anonymous class extending mockit.Expectations: 
 
