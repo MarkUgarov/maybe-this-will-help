@@ -7,9 +7,9 @@ JMockit is not my choice when it comes to mocking classes. However, it has its u
 In this fiction, your team somehow endet up to program in singleton patern and likes static methods. There is nothing
 you can do about.
 
-You wrote two little classes: a `Controller` and a `Service`. Assume we are in an early stage of the project and just want
+You wrote two little classes: a `Controller` and a `SingletonManager`. Assume we are in an early stage of the project and just want
 to make first steps by implementing the `Controller` without having the full functionality of the backend. In this
-szenario, the `Controller` holds the "logic" while the `Service` is supposed to provide the rest of the "functionality"
+szenario, the `Controller` holds the "logic" while the `SingletonManager` is supposed to provide the rest of the "functionality"
 later on.
 
 **The process:**
@@ -18,7 +18,7 @@ The `Controller` checks if the database is available (via the `Service`).
 
 If so, everything is nice.
 
-If not, the `Controller` calls the `Service` again, evaluates current user and Time and sends an E-Mail.
+If not, the `Controller` calls the `SingletonManager` again, evaluates current user and Time and sends an E-Mail.
 
 The Service is (obviously) just a prototype. But we can already test our Controller without implementing everything
 else.
@@ -36,7 +36,7 @@ public class Controller {
         singletonManager = SingletonManager.getInstance();
     }
 
-    public void callService() {
+    public void callManager() {
         if(!singletonManager.checkDataBaseAvailable()){ // calling the instance method
             SingletonManager.sendAlertMail( // calling the class method
                     SingletonManager.getCurrentUserName(),  // calling the class method
@@ -167,8 +167,12 @@ new Expectations(){{
 ### Conclusion of JMockit
 
 As you may seem:
-- The anonymous class does set `minTimes` and  `result` multiple times
+
 - There is no clear boundary between the mocking of a method (e.g. `singletonService.checkDataBaseAvailable(); result=false;`) and the verirfication of its call ( e.g. `minTimes=1`).
-- At the same time, the order of the lines do matter a lot:` result=false;` must be positioned after its method mock but before the next method mocking line (e.g. after `singletonService.checkDataBaseAvailable();`, but before `singletonService.giveCurrentLocalDateTime();`).
+- At the same time, the order of the lines do matter a lot:
+  - The anonymous class does set `minTimes` and  `result` multiple times. 
+  - In our example,` result=false;` must be positioned after its method mock but before the next method mocking line (e.g. after `singletonService.checkDataBaseAvailable();`, but before `singletonService.giveCurrentLocalDateTime();`).
 
 This gets unreadable pretty quickly and in most cases it is not very clear what happens exactly. 
+
+Compare that to [mockito](mockito.md), which is way more readable. 
