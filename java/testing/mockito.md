@@ -144,12 +144,15 @@ This is pretty simple, right?
 As we see, mocking and verifying with mockito is pretty straight forward.
 
 - There is a clear boundary between mocking a method (e.g.  `doReturn(false).when(service).checkDataBaseAvailable();`) and verifying its call (e.g. `verify(service).checkDataBaseAvailable();`).
-- There is no anonymous class, instead there are two separate "blocks"
+- There are two separate "blocks"
   - It's clearly visible what result is mocked on which method and what method is validated to be called.  
   - The order of lines in the "blocks" are not really important.
   
+Compare that to [jmockit](jmockit.md), which is much less readable.
 
-Compare that to [jmockit](jmockit.md), which is much less readable. 
+But there is one downside: 
+Sometimes it is not possible to mock static methods with Mockito. 
+Technically this can be fixed by updating some dependencies, but this is not always an option. For that, we truly have to use [jmockit](jmockit.md).
 
 ### Aditional hint
 
@@ -176,4 +179,8 @@ Also, you can improve your mocking in certain situations by doing something like
 to return `false` on the first call, but `true` on the second. 
 
 Those are just examples, please feel free to google. 
+
+# Parent topic
+
+This page is a subpage of [Combining JUnit, Mockito and JMockit](junitAndMockitoAndJmockit.md)
 

@@ -176,3 +176,7 @@ As you may seem:
 This gets unreadable pretty quickly and in most cases it is not very clear what happens exactly. 
 
 Compare that to [mockito](mockito.md), which is way more readable. 
+
+# Parent topic
+
+This page is a subpage of [Combining JUnit, Mockito and JMockit](junitAndMockitoAndJmockit.md)
