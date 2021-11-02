@@ -16,4 +16,8 @@ Run
 
 > dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 
-That's it. Well done. You can execute Linux commands now. 
+That's it. Well done.
+- You can execute Linux commands now while using Powershell (not Command Prompt).
+- You don't need to restart.
+- You may also execute .sh - Scripts (executing them from Powershell).
+- The change is permanent, so you don't need to do this step after each restart.
