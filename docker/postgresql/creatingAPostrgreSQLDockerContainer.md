@@ -1,6 +1,6 @@
 # Creating a PostgreSQL docker container ("postgres")
 
-There are [several versions](https://hub.docker.com/_/postgres) available on docker hub for Postgres. 
+There are [several versions](https://hub.docker.com/_/postgres) available on docker hub for Postgres. Here I make an example with 12.3. Feel free to adapt.  
 
 ---
 
