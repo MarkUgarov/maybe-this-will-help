@@ -23,7 +23,7 @@ If you are happy with name and tag, go to the next step. Otherwise you can renam
 
 ### Prepare volume folder
 
-Also create a directory which you want to mount for your database. It is actually not mandatory, but it prevents some errors that will appear if you database gets bigger.
+Also create a directory which you want to mount for your database. It is actually not mandatory, but it prevents some errors that will appear if your database gets bigger.
 
 ### Prepare docker file
 
@@ -75,7 +75,7 @@ Open your terminal (e.g. Command Prompt or IntelliJ-Terminal) and navigate to th
 
 > docker-compose up
 
-It might take a while, but the image should be imported.
+It might take a while, but the image should be started.
 
 ---
 

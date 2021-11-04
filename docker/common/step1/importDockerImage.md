@@ -5,6 +5,11 @@ See e.g. [https://github.com/MaksymBilenko/docker-oracle-12c](https://github.com
 
 > docker pull quay.io/maksymbilenko/oracle-12c 
 
+
+**Hint**:
+With docker-compose, images that are hosted via [docker hub](https://hub.docker.com/search?q=&type=image) don't need to be imported manually first!
+They will get pulled automatically when executing `docker-compose up` as described in [Run an image as container](../step2/runDockerContainer.md).
+
 ---
 
 ## Step 1: Download / Copy / ...

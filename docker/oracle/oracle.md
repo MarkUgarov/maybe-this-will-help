@@ -26,6 +26,10 @@ You can pull this example with
 
 > docker pull quay.io/maksymbilenko/oracle-12c
 
+**Hint**:
+With docker-compose, images that are hosted via [docker hub](https://hub.docker.com/search?q=&type=image) don't need to be imported manually first!
+They will get pulled automatically when executing `docker-compose up` in [Step 2](#step-2-run-the-docker-container).
+
 ## Option 2:
 [Use a provided Docker Image from archive](../common/step1/importDockerImage.md)
 
