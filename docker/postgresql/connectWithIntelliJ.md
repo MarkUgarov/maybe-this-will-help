@@ -7,7 +7,7 @@ Inside (on the top) there is a small button for the "Data Source Properties". Cl
 
 ## Step 1
 
-In the URL paste "jdbc:postgresql://localhost:5432/<DB_NAME>" (replacing <DB_NAME> by whatever you wrote in docker-compose.yaml). Some of the fields should now fill automatically.
+In the URL paste "jdbc:postgresql://localhost:5432/`<DB_NAME>`" (replacing `<DB_NAME>` by whatever you wrote in docker-compose.yaml). Some of the fields should now fill automatically.
 
 ## Step 2
 
@@ -15,7 +15,7 @@ Choose "Driver": PostgreSQL (if not already done by IntelliJ)
 
 ## Step 3
 
-Set "Authentication": "User & Password". Type in your <DB_USERNAME> and <DB_PASSWORD> (e.g. "brad" and "password" (or whatever user and password you set before when setting up [docker-compose.yml](creatingAPostrgreSQLDockerContainer.md#step-1-prepare-docker-compose-file)).
+Set "Authentication": "User & Password". Type in your `<DB_USERNAME>` and `<DB_PASSWORD> `(e.g. "brad" and "password" (or whatever user and password you set before when setting up [docker-compose.yml](creatingAPostrgreSQLDockerContainer.md#step-1-prepare-docker-compose-file)).
 
 Click "Test Connection". If successful, you might want to click "ok" and analyze your database.
 
