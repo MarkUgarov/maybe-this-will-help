@@ -63,4 +63,6 @@ I gave you some examples how to export and import, but really understand what's 
 ---
 
 ## Next steps
-Maybe you want to [connect your PostgreSQL database tor your IntelliJ](connectWithIntelliJ.md)
+Maybe you want to
+- [connect your PostgreSQL database tor your IntelliJ](connectWithIntelliJ.md)
+- see [more about docker and PostgreSQL](postgresql.md)
