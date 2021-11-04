@@ -46,3 +46,7 @@ They will get pulled automatically when executing `docker-compose up` in [Step 2
 # Step 3: Configure your database
 [Configure your oracle database](configureOracleDbInContainer.md)
 
+---
+
+# Step 4 (optional): 
+[Connect with IntelliJ](connectWithIntelliJ.md)
