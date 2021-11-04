@@ -78,5 +78,5 @@ to see the log. If there is no output, your container does not run.
 You might like to 
 - [export an existing PostgreSQL database and import it into your new container](exportAndImport.md) or
 - [connect to the database of your container with IntelliJ](connectWithIntelliJ.md)
-- see [more about docker and PostgreSQL](postgresql.md)
+- see [more about docker and PostgreSQL](index.md)
 

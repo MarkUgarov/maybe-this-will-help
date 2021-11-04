@@ -10,7 +10,7 @@ Go to docker.com, download and install.
 
 You will need admin rights.
 
-If you don't have any clue what docker is, maybe look [here](../common/docker.md).
+If you don't have any clue what docker is, maybe look [here](../common/index.md).
 
 ---
 

@@ -15,5 +15,5 @@ Click "Test Connection". If successful, you might want to click "ok" and analyze
 ---
 
 # Done?
-Maybe you want to check [all steps of running an oracle database via docker-compose](../../oracle/oracle.md)
-or you would like to [export your container](../common/step3/exportDocker.md#option-1-export-your-container-directly)
+Maybe you want to check [all steps of running an oracle database via docker-compose](../../oracle/index.md)
+or you would like to [export your container](../common/step3/exportindex.md#option-1-export-your-container-directly)

@@ -15,4 +15,4 @@ Click "Test Connection". If successful, you might want to click "ok" and analyze
 
 You might like to
 - [export an existing PostgreSQL database and import it into your new container](exportAndImport.md) or
-- see [more about docker and PostgreSQL](postgresql.md)
+- see [more about docker and PostgreSQL](index.md)

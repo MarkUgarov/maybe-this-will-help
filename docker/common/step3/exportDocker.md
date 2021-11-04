@@ -64,4 +64,4 @@ This might take a while!
 ---
 
 # Done?
-Maybe you want to check [all steps of running an oracle database via docker-compose](../../oracle/oracle.md)
+Maybe you want to check [all steps of running an oracle database via docker-compose](../../oracle/index.md)

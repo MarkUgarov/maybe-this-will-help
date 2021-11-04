@@ -15,7 +15,7 @@ They will get pulled automatically when executing `docker-compose up` as describ
 ## Step 1: Download / Copy / ...
 
 There are many ways to get an archive. In most cases it will be be a `.tar`, like `oracle19c.tar`. 
-Mabe a friend gave it to you on a LaserDisk after he [exported his docker container](../step3/exportDocker.md)
+Mabe a friend gave it to you on a LaserDisk after he [exported his docker container](../step3/exportindex.md)
 
 Download / copy /... it anywhere. 
 
