@@ -6,7 +6,9 @@ This is just a page where I am planning to talk about different solutions that I
   * [the general idea (for beginners)](docker/common/index.md) 
   * [docker-compose and oracle-db](docker/oracle/index.md)
   * [docker-compose and postgresql](docker/postgresql/index.md)
-* java
+* testing with java
+  * [testing with junit and mockito](java/testing/mockito.md) 
+  * [testing with junit and jmockit](java/testing/jmockit.md) 
   * [combining junit, mockito and jmockit](java/testing/junitAndMockitoAndJmockit.md)
 * windows
   * [grant local admin rights](windows/adminRightsForUsers.md)
