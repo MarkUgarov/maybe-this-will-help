@@ -14,7 +14,9 @@ If you break one of those containers (or simple missconfigure it), your machine 
 
 Also, we can export those containers into so called  **images**. 
 
-Images (if you are not familiar with the term) are basically save-files. 
+Images (if you are not familiar with the term) are basically save-files. Well, not quite, but maybe this will get you an idea.\
+_Note to everybody who knows what an image actually is_: I can hear you scream at your monitor.
+
 You can actually export (see [here](step3/exportDocker.md)) and import (see [here](step1/importDockerImage.md)) them.
 
 
