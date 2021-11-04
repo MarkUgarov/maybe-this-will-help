@@ -2,8 +2,11 @@
 
 Well, glad you asked, but who does really know? It seems to be magic. 
 
+Maybe look [here](https://www.docker.com) and you may find out. 
+
 ## Info 
-As you might guess, this page is way over simplified and is intended to give you a broad idea so you can start with docker with a first impression and a rough idea what is going on.  
+
+As you might guess, this page is way over simplified and is intended to give you a _very_ broad idea so you can start with docker with a first impression and a rough idea what is going on.  
 
 ## What is it good for?
 
