@@ -47,7 +47,7 @@ Well, go complicated then.
 
 ### Do you really want to download everything?
 
-You can actually check what will be downloaded by calling (via browser) `https://<ARTIFACTORY_URL>/artifactory/api/search/creation?from=0&repos=<REPO_NAME>`.
+You can actually check what will be downloaded by calling (via browser and of course by replacing the artifactory-url and the repository-name) `https://<ARTIFACTORY_URL>/artifactory/api/search/creation?from=0&repos=<REPO_NAME>`.
 
 So in our example, Brad would open `https://repo.my-company.com/artifactory/api/search/creation?from=0&repos=company-dependencies-maven`.
 
