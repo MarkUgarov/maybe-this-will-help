@@ -47,7 +47,7 @@ Well, go complicated then.
 
 ### Step1: Create a script
 
-Create a new file "download.sh" on your machine. Now copy the following content:
+Create a new file `download.sh` on your machine. Now copy the following content:
 
 ```shell
 # download.sh
@@ -75,6 +75,7 @@ for RESULT in $RESULTS ; do
   echo "#####"
 done
 ```
+USERNAME, PASSWORD, ARTIFACTORY and REPO don't need to be replaced here.**You don't need to replace anything.** Just save this into a file `download.sh`.
 
 ### Step 2: Execute the script
 In your terminal, navigate into the folder where your script is located. 
