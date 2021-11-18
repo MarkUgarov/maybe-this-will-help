@@ -1,4 +1,4 @@
-# Enable Windows Subsystem 2 for Linux
+# Enable Windows Subsystem 2 for Linux (WSL2)
 
 Sometimes you need to do Linux stuff on your windows computer.
 

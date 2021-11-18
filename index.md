@@ -9,7 +9,9 @@ This is just a page where I am planning to talk about different solutions that I
 * testing with java
   * [testing with junit and mockito](java/testing/mockito.md) 
   * [testing with junit and jmockit](java/testing/jmockit.md) 
-  * [combining junit, mockito and jmockit](java/testing/junitAndMockitoAndJmockit.md)
+  * [combining junit, mockito and mockit](java/testing/junitAndMockitoAndJmockit.md)
 * windows
   * [grant local admin rights](windows/adminRightsForUsers.md)
   * [enable windows subsystem 2 for linux](windows/windowsSubsystem2ForLinux.md)
+* maven
+  * [how to download an artifactory](maven/downloadArtifactories.md)
