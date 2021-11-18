@@ -19,7 +19,7 @@ In most cases it will suffice if you just call (via browser or as get Command)
 https://<ARTIFACTORY_URL>/artifactory/api/archive/download/<REPO_NAME>/?archiveType=zip
 ```
 
-so in our case
+so in our example
 
 ```shell
 https://repo.my-company.com/artifactory/api/archive/download/company-dependencies-maven/?archiveType=zip
@@ -44,6 +44,14 @@ Well, go complicated then.
 ### What we need
 1. The following code works on shellscript, so you might want to look to [Enable WSL2](/windows/windowsSubsystem2ForLinux.md) if you use windows. (Alternatively, you might want to use GitBash.)
 2. You need to have installed curl.
+
+### Do you really want to download everything?
+
+You can actually check what will be downloaded by calling (via browser) `https://<ARTIFACTORY_URL>/artifactory/api/search/creation?from=0&repos=<REPO_NAME>`.
+
+So in our example, Brad would open `https://repo.my-company.com/artifactory/api/search/creation?from=0&repos=company-dependencies-maven`.
+
+Are you really sure? Then continue!
 
 ### Step1: Create a script
 
@@ -82,7 +90,7 @@ In your terminal, navigate into the folder where your script is located.
 
 Execute 
 ```shell
-.\download.sh <LOGIN_NAME> <LOGIN_PASSWORD> <ARTIFACTORY_URL> <REPOSITORY>
+.\download.sh <LOGIN_NAME> <LOGIN_PASSWORD> <ARTIFACTORY_URL> <REPO_NAME>
 ```
 
 So in our example
