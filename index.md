@@ -13,5 +13,6 @@ This is just a page where I am planning to talk about different solutions that I
 * windows
   * [grant local admin rights](windows/adminRightsForUsers.md)
   * [enable windows subsystem 2 for linux](windows/windowsSubsystem2ForLinux.md)
-* maven
-  * [how to download an artifactory](maven/downloadArtifactories.md)
+* maven 
+  * [how to download a whole repository of an artifactory](maven/downloadArtifactories.md)
+  * [how to mass upload into an artifactory](maven/massUploadToArtifactory.md)

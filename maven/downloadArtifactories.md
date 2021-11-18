@@ -1,4 +1,4 @@
-# How to download an artifactory
+# How to download a whole repository of an artifactory 
 
 Working with maven needs access to an artifactory.  
 In most cases, you will work with `mvn` which will download dependencies you specified in your `pom.xml` into your `.m2`-directory.
@@ -94,4 +94,4 @@ So in our example
 This will take a long, long, long, long time - depending on the size of the repository. 
 
 ### Step 4: Check the output
-Everything just downloaded should be set into a folder "downloaded" (as a subfolder from where you executed the skript).
+Everything just downloaded should be set into a folder `downloaded` (as a subfolder from where you executed the skript).
