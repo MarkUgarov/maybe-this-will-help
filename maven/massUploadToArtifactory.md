@@ -25,7 +25,7 @@ Install curl. Maybe [this article on stackoverflow](https://stackoverflow.com/qu
 ### Something to upload
 
 We need something that is structured like an `.m2/repository`-directory. 
-For example: Your actual `.m2/repository`-directory or the stuff you got by [downloading a whole artifactory](downloadArtifactories.md).
+For example: Your actual `.m2/repository`-directory or the stuff you got by [downloading a whole artifactory](downloadWholeRepoFromArtifactory.md).
 
 You can find your `.m2/repository`-directory by executing
 
@@ -113,4 +113,6 @@ A simple upload is done by
 curl -u username:password -T <PATH_TO_FILE> "https://<ARTIFACTORY_SERVER>/<REPOSITORY_PATH>/<TARGET_FILE>"
 ```
 
-## Mass upload
+# What next?
+
+Maybe you want to check how to [download a whole repository from an artifactory](downloadWholeRepoFromArtifactory.md)?

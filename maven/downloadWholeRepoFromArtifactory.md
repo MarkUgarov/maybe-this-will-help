@@ -95,3 +95,8 @@ This will take a long, long, long, long time - depending on the size of the repo
 
 ### Step 4: Check the output
 Everything just downloaded should be set into a folder `downloaded` (as a subfolder from where you executed the skript).
+
+---
+# What next?
+
+Maybe you want to [mass upload your content to another artifactory](massUploadToArtifactory.md)?
