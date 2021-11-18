@@ -4,6 +4,8 @@ Working with maven needs access to an artifactory.
 In most cases, you will work with `mvn` which will download dependencies you specified in your `pom.xml` into your `.m2`-directory.
 But sometimes you want to download a whole artifactory. Maybe you want to migrate from an old one or don't know how to mirror?
 
+Btw: Thanks to Peter Sheng for [this article](https://shenxianpeng.github.io/2021/05/artifactory-api-search/). I basically copied its code and made some smaller, but essential changes for my needs. 
+
 ## Our example
 For our example we will have
 1. an artifactory located under `https://repo.my-company.com/` 
