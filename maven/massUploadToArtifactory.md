@@ -36,7 +36,7 @@ in any terminal.
 
 E.g.: Brad surely would find his `.m2/repository`-directory on windows in `C:\Users\Brad\.m2\repository`.
 
-It should have a structure like 
+Your `.m2`-directory should have a structure like this (containing the folder `repository`):
 * .m2
   * repository
     * com
