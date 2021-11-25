@@ -111,7 +111,7 @@ beim Download von maven erstellt
 
 A simple upload is done by 
 ```shell
-curl -u username:password -T <PATH_TO_FILE> "https://<ARTIFACTORY_SERVER>/<REPOSITORY_PATH>/<TARGET_FILE>"
+curl -u username:password -T <PATH_TO_FILE> "https://<ARTIFACTORY_SERVER>/artifactory/<REPOSITORY_PATH>/<TARGET_FILE>"
 ```
 
 # What next?

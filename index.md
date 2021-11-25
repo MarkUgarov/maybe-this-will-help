@@ -14,5 +14,7 @@ This is just a page where I am planning to talk about different solutions that I
   * [grant local admin rights](windows/adminRightsForUsers.md)
   * [enable windows subsystem 2 for linux](windows/windowsSubsystem2ForLinux.md)
 * maven 
-  * [how to download a whole repository of an artifactory](maven/artifactory/downloadWholeRepoFromArtifactory.md)
-  * [how to mass upload into an artifactory](maven/artifactory/massUploadToArtifactory.md)
+  * artifactory
+    * [how to download a whole repository of an artifactory](maven/artifactory/downloadWholeRepoFromArtifactory.md)
+    * [how to mass upload into an artifactory](maven/artifactory/massUploadToArtifactory.md)
+    * [how to automatically upload your artifacts from jenkins](maven/artifactory/uploadFromJenkins.md)
